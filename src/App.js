@@ -28,14 +28,14 @@ function App() {
     <section>
       <div className="bg-black text-white h-screen font-sans">
         <div className="container mx-auto flex flex-col  items-center py-20 ">
-          <div className="flex flex-col w-full lg:w-1/3 justify-center items-start p-8">
+          <div className="flex flex-col w-full lg:w-1/3 justify-center items-start">
             <h1 className="text-3xl md:text-5xl p-2 text-yellow-300 tracking-loose">
               PokeApi
             </h1>
             <h2 className="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2">
               Find your pokemon by ID
             </h2>
-            <form>
+            <form className="flex-col justify-center content-center ">
               <input
                 className="peer w-full rounded-r-lg rounded-l-lg border border-slate-400 px-2 text-slate-900 placeholder-slate-400 transition-colors duration-300 focus:border-sky-400 focus:outline-none mb-3"
                 onChange={handleChange}
