@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/poke-apidex/static/css/main.d3a8d777.css",
+    "main.js": "/poke-apidex/static/js/main.998bada8.js",
+    "index.html": "/poke-apidex/index.html",
+    "main.d3a8d777.css.map": "/poke-apidex/static/css/main.d3a8d777.css.map",
+    "main.998bada8.js.map": "/poke-apidex/static/js/main.998bada8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3a8d777.css",
+    "static/js/main.998bada8.js"
+  ]
+}
