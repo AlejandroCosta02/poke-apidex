@@ -25,35 +25,23 @@ function App() {
   };
 
   return (
-    <section>
-      <div className="bg-black text-white h-screen font-sans">
-        <div className="container mx-auto flex flex-col  items-center py-20 ">
-          <div className="flex flex-col w-full lg:w-1/3 justify-center items-start">
-            <h1 className="text-3xl md:text-5xl p-2 text-yellow-300 tracking-loose">
-              PokeApi
-            </h1>
-            <h2 className="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2">
-              Find your pokemon by ID
-            </h2>
-            <form className="flex-col justify-center content-center ">
-              <input
-                className="peer w-full rounded-r-lg rounded-l-lg border border-slate-400 px-2 text-slate-900 placeholder-slate-400 transition-colors duration-300 focus:border-sky-400 focus:outline-none mb-3"
-                onChange={handleChange}
-                placeholder="poke"
-              />
-              <button
-                className="bg-green-500 text-white w-full p-2 flex flex-row justify-center gap-2 items-center rounded-r-lg rounded-l-lg  hover:bg-green-600 duration-100 ease-in-out"
-                onClick={getPokeId}
-              >
-                check
-              </button>
-            </form>
-          </div>
-
+    <div className="container mx-auto h-screen bg-black">
+      <div className="flex flex-col space-y-2 sm:space-y-0 sm:flex-row justify-center sm:space-x-8 sm:py-40">
+        <div className="h-96 bg-black flex flex-col justify-center text-center">
+          <h1 className="text-5xl text-yellow-500">PokeApi</h1>
+          <h2 className="text-lg text-white">Find your pokemon by ID</h2>
+          <form className="space-x-2">
+            <input className="flex-1 p-4 pl-10 text-xl font-bold text-white border border-gray-300 rounded-lg bg-gray-500" onChange={handleChange} placeholder="poke" />
+            <button className="text-white font-bold bg-blue-500 rounded-lg px-4 py-2" onClick={getPokeId}>
+              check
+            </button>
+          </form>
+        </div>
+        <div className="bg-black object-center" >
           <CardPokemon pokeName={pokemonName} pokeImg={pokemonImg} />
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
